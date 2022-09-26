@@ -1,0 +1,310 @@
+:root {
+    --primary-color: #9d4edd;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Josefin Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/*Navbar*/
+
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 90px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 20px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+    justify-content: space-around;
+
+}
+
+/*Home*/
+
+.home {
+    background-color: #fff;
+    height: 550px;
+}
+
+.home-text {
+    padding: 200px 0;
+    font-size: large;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*Skills*/
+
+.skills {
+    height: 400px;
+}
+
+.hard-skills-heading {
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+
+.hard-skills .card {
+    margin-bottom: 60px;
+    transition: transform 0.2s ease-in;
+}
+
+.card-html {
+    width: 180px;
+}
+
+.card-css {
+    width: 160px;
+}
+
+.hard-skills .card:hover {
+    transform: translateY(-15px);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px;
+}
+
+.soft-skills-heading {
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-top: 40px;
+}
+
+.soft-skills .grid h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+i {
+    margin: 25px;
+}
+
+
+/*Projects*/
+
+.projects {
+    height: 400px;
+    margin-top: 100px;
+}
+
+.projects-heading {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-top: 50px;
+}
+
+/*Contacts*/
+
+.contacs {
+    height: 500px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.contacs h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.contacs p {
+    line-height: 1.8;
+    margin-right: 140px;
+}
+
+.contacs h2 {
+    color: var(--primary-color);
+}
+
+.contacs-form {
+    position: relative;
+    top: 60px;
+    height: 500px;
+    width: 400px;
+    padding: 40px;
+    justify-self: flex-end;
+}
+
+.contacs-form .form-control {
+    margin: 30px 0;
+}
+
+.form-control input[type='text'],
+.form-control input[type='email'],
+textarea {
+    border: 0;
+    border-bottom: 1px solid #b4becd;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+    height: 60px;
+    outline: none;
+}
+
+textarea {
+    display: block;
+    height: 130px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder {
+    text-align:left;
+    overflow: visible;
+  }
+
+.contacs-form input:focus {
+    outline: none;
+}
+
+.contacs .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.card {
+    background-color: #fff;
+    color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+
+/*Footer*/
+
+.footer {
+    height: 70px;
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.social {
+justify-self: end;
+}
+
+/*For mobile phones*/
+ @media (max-width: 600px) {
+    .grid,
+    .home .grid,
+    .skills .grid,
+    .contacs .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .home {
+        height: auto;
+    }
+
+    .home-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .home-img {
+        justify-self: center;
+        margin-bottom: 50px;
+    }
+
+    .contacs-text {
+        text-align: center;
+    }
+
+    .footer {
+        margin-top: 300px;
+        height: auto;    
+    }
+ }
+
+

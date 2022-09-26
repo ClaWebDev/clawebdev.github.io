@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Claudia Gulisano Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--CSS-->
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!--Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <!--Navbar-->
+        <div class="navbar">             
+            <div class="container flex">
+                    <nav>
+                        <ul>
+                           <li><a href="#home">Home</a></li>
+                           <li><a href="#skills">Skills</a></li>
+                           <li><a href="#projects">Projects</a></li>
+                           <li><a href="#contacts">Contacts</a></li>
+                        </ul>
+                
+                    </nav>
+            </div>
+        </div> 
+
+        <!--Home-->
+        <section class="home" id="home">
+        <div class="container grid">
+            <div class="home-text">
+                <h1>
+                Hello, my name is <span>Claudia</span>
+                </h1>
+                <h2>
+                    I'm a <span>Web Developer</span>
+                </h2>
+            </div>
+            <div class="home-img">
+             <img src="img/home.png" alt="">  
+            </div>
+       </div>
+        </section>
+
+
+        <!--Hard Skills-->
+        <section id="skills">
+            <div class="container hard-skills">
+            <h2 class="hard-skills-heading text-center">
+                Hard Skills
+            </h2> 
+     
+            <div class="container flex">
+                <div class="card card-html">
+                    <img src="img/logo-html.png" alt="">   
+                </div>
+                <div class="card card-css">
+                    <img src="img/logo-ccs.png" alt="">
+                </div>
+            </div>
+            </div>
+
+        <!--Soft skills-->
+            <div class="container soft-skills">
+                <h2 class="soft-skills-heading text-center">
+                    Soft Skills
+                </h2>
+                <div class="grid grid-3 text-center">
+                    <div>
+                        <i class="fa-solid fa-palette fa-3x"></i>
+                        <h3>Creativity</h3>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-lightbulb fa-3x"></i>
+                        <h3>Problem-solving</h3>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-people-arrows fa-3x"></i>
+                        <h3>Empathy</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Projects-->
+        <section class="projects" id="projects">
+            <h2 class="projects-heading text-center">My Projects</h2>
+        </section>
+
+                
+        <!--Contacts-->
+        <section class="contacs" id="contacts">
+            <div class="container grid">
+                
+                <div class="contacts-text">
+                    <h1>About Me</h1>
+                    <p>I'm Claudia Gulisano, a 22-year-old Italian
+                        Web Developer with an addiction for coffee 
+                        and a passion for ice cream. Still interested 
+                        in working with me? Great! Let's talk. 
+                    </p>
+                </div>
+
+                <div class="contacts-form card">
+                    <h2>Contact Me</h2>
+                    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <div class="form-control">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-control">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-control">
+                            <textarea name="message" placeholder="Enter your message..." rows="8" cols="20" required></textarea>
+                        </div>
+                        <input type="submit" value="Send" class="btn btn-primary">
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Footer-->
+        <section class="footer">
+            <div class="container grid">
+                <div>
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+
+    </body>
+</html>
